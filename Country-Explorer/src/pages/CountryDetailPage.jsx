@@ -9,7 +9,7 @@ function CountryDetailPage() {
 
   useEffect(() => {
     axios
-      .get(https://restcountries.com/v3.1/name/${countryName}?fullText=true)
+      .get("https://restcountries.com/v3.1/name/${countryName}?fullText=true")
       .then((res) => {
         setCountry(res.data[0]);
         setLoading(false);
